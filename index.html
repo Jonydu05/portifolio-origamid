@@ -12,6 +12,13 @@
         overflow: auto;
         word-break: break-word;
       }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        align-items: center;
+      }
     </style>
   </head>
 
@@ -45,8 +52,12 @@
         </div>
       </section>
 
-      <section id="experiencia">
-        <h2>Experiência</h2>
+      <section id="experiencia" class="experiencia">
+        <h2>
+          Expe <br />
+          riên <br />
+          cia
+        </h2>
         <div>
           <p>
             Desenvolvo pequenos projetos como o <em>Bikcraft</em>, utilizando
@@ -57,8 +68,10 @@
 
           <ul class="experiencia__lista">
             <li class="experiencia__item">
-              <span class="experiencia__ano">2045</span>
-              <span class="experiencua__marcador"></span>
+              <div class="experiencia__custom">
+                <span class="experiencia__ano">2045</span>
+                <span class="experiencia__marcador"></span>
+              </div>
 
               <div>
                 <h5>Bikcraft</h5>
@@ -81,8 +94,10 @@
             </li>
 
             <li class="experiencia__item">
-              <span class="experiencia__ano">2044-45</span>
-              <span class="experiencua__marcador"></span>
+              <div class="experiencia__custom">
+                <span class="experiencia__ano">2044-45</span>
+                <span class="experiencia__marcador"></span>
+              </div>
 
               <div>
                 <h5>Surfbot</h5>
@@ -103,8 +118,10 @@
             </li>
 
             <li class="experiencia__item">
-              <span class="experiencia__ano">2044</span>
-              <span class="experiencua__marcador"></span>
+              <div class="experiencia__custom">
+                <span class="experiencia__ano">2044</span>
+                <span class="experiencia__marcador"></span>
+              </div>
 
               <div>
                 <h5>Brafé</h5>
