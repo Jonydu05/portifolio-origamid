@@ -1,0 +1,49 @@
+/* prettier-ignore */
+
+@font-face {
+  font-family: Jost;
+  src:
+    url('../font/Jost-Regular.woff2') format('woff2'),
+    url('../font/Jost-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vidaloka;
+  src:
+    url('../font/Vidaloka-Regular.woff2') format('woff2'),
+    url('../font/Vidaloka-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* @link https://utopia.fyi/type/calculator?c=640,18,1.2,1440,24,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+  --font-step--2: clamp(0.5628rem, 0.8359rem + -0.2731vw, 0.7813rem);
+  --font-step--1: clamp(0.7502rem, 0.9843rem + -0.2341vw, 0.9375rem);
+  --font-step-0: clamp(1rem, 1.1563rem + -0.1562vw, 1.125rem);
+  --font-step-1: clamp(1.333rem, 1.3543rem + -0.0212vw, 1.35rem);
+  --font-step-2: clamp(1.62rem, 1.5808rem + 0.1961vw, 1.7769rem);
+  --font-step-3: clamp(1.944rem, 1.8379rem + 0.5307vw, 2.3686rem);
+  --font-step-4: clamp(2.3328rem, 2.1267rem + 1.0307vw, 3.1573rem);
+  --font-step-5: clamp(2.7994rem, 2.447rem + 1.7617vw, 4.2087rem);
+
+  // TODO: implement a vertical rhythm
+  --font-size-default: var(--font-step-0);
+  --line-height-default: 1.5;
+
+  // @see https://systemfontstack.com/
+  --font-family-sans-serif: -apple-system, blinkmacsystemfont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial,
+    sans-serif;
+  --font-family-serif: times new roman, droid serif, times, source serif pro,
+    serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  --font-family-mono: menlo, consolas, monaco, liberation mono, lucida console,
+    monospace;
+
+  --font-family-jost: jost, var(--font-family-sans-serif);
+  --font-family-vidaloka: vidaloka, var(--font-family-serif);
+}

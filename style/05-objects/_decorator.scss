@@ -1,0 +1,30 @@
+.decorator {
+  position: absolute;
+  top: 30px;
+  left: -40px;
+  z-index: var(--z-index-below);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: clamp(3.75rem, 2.6786rem + 5.3571vw, 7.5rem);
+    transform: rotate(115deg);
+  }
+
+  &::before {
+    background: var(--color-primary-400);
+  }
+
+  &::after {
+    top: 20px;
+    left: -30px;
+    background: var(--color-primary-700);
+
+    @media (--small-down) {
+      top: 10px;
+      left: -15px;
+    }
+  }
+}

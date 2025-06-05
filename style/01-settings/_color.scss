@@ -1,0 +1,28 @@
+/* prettier-ignore */
+:root {
+  --color-brand-hue: 349;
+  --color-brand-saturation: 95%;
+  --color-brand-lightness: 56%;
+
+  --color-brand: hsl(var(--color-brand-hue) var(--color-brand-saturation) var(--color-brand-lightness));
+  --color-secondary: hsl(var(--color-brand-hue) var(--color-brand-saturation) 35%);
+
+  --color-social-media-facebook: hsl(221 44% 41%);
+  --color-social-media-twitter: hsl(196 100% 46%);
+  --color-social-media-linkedin: hsl(201 100% 35%);
+  --color-social-media-youtube: hsl(0 74% 46%);
+  --color-social-media-instagram: hsl(349 75% 57%);
+  --color-social-media-github: hsl(0 0% 20%);
+
+  --color-primary-50: #fff0f1;
+  --color-primary-100: #ffe2e3;
+  --color-primary-200: #ffc9cf;
+  --color-primary-300: #ff9ca7;
+  --color-primary-400: #ff657a;
+  --color-primary-500: #ff3050;
+  --color-primary-600: #ed0c39;
+  --color-primary-700: #cd0330;
+  --color-primary-800: #ab0631;
+  --color-primary-900: #920930;
+  --color-primary-950: #520014;
+}

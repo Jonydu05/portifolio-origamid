@@ -1,0 +1,11 @@
+{
+  "plugins": {
+    "postcss-pxtorem": {
+      "propList": [
+        "*",
+        "!letter-spacing"
+      ]
+    },
+    "postcss-custom-media": {}
+  }
+}
