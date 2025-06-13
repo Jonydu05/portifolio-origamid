@@ -1,0 +1,13 @@
+.name {
+  background-color: #fff8f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 45%;
+
+  &__title {
+    font-size: var(--font-step-3);
+    font-family: var(--font-family-vidaloka);
+    color: #261000;
+  }
+}

@@ -17,6 +17,7 @@
     font-size: 144px;
     line-height: 144px;
     hyphens: none;
+    color: #e0e0e0;
   }
 
   &__lista {
@@ -41,6 +42,14 @@
     column-gap: 20px;
     justify-content: space-between;
     max-width: 660px;
+    transition-duration: var(--transition-duration-default);
+    transition-timing-function: var(--transition-function-ease-in-out-quint);
+    transition-property: box-shadow;
+    cursor: default;
+
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0 0 0 / 10%);
+    }
   }
 
   h5 {
@@ -66,6 +75,15 @@
     border-radius: 6px;
     background-color: white;
     font-size: var(--font-step--1);
+    border: 1px solid transparent;
+    transition-duration: var(--transition-duration-default);
+    transition-timing-function: var(--transition-function-ease-in-out-quint);
+    transition-property: border-color, box-shadow;
+
+    &:hover {
+      border-color: var(--color-primary-600);
+      box-shadow: 0 2px 4px rgba(0 0 0 / 10%);
+    }
   }
 
   &__custom {
